@@ -61,11 +61,38 @@ namespace ExportDanych.App_GlobalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Data Exporter.
+        /// </summary>
+        public static string DataExporter {
+            get {
+                return ResourceManager.GetString("DataExporter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to From date:.
         /// </summary>
         public static string FromDate {
             get {
                 return ResourceManager.GetString("FromDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last Days.
+        /// </summary>
+        public static string LastDays {
+            get {
+                return ResourceManager.GetString("LastDays", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Range.
+        /// </summary>
+        public static string Range {
+            get {
+                return ResourceManager.GetString("Range", resourceCulture);
             }
         }
         

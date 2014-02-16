@@ -15,6 +15,19 @@ namespace ExportDanych.Controllers
         [HttpPost]
         public FileResult Create(ExportModel exportModel)
         {
+            return createBackupFromModel(exportModel);
+        }
+
+        [HttpPost]
+        public FileResult CreateLastDays(int days)
+        {
+            ExportModel exportModel = new ExportModel();
+            exportModel.FromDate = exportModel.ToDate.AddDays(-1d*days);
+            return createBackupFromModel(exportModel);
+        }
+
+        private FileResult createBackupFromModel(ExportModel exportModel)
+        {
             string HomeDirectory = ((BaseCatalogDir)System.Web.Configuration.WebConfigurationManager.GetSection("katalogBazowyDanych")).BaseDir;
             Backup backup = new Backup(HomeDirectory);
             string fileName = prepareAttachmentName(exportModel);

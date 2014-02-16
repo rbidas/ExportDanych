@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="DataExporter" xml:space="preserve">
+    <value>Data Exporter</value>
+  </data>
   <data name="FromDate" xml:space="preserve">
     <value>From date:</value>
+  </data>
+  <data name="LastDays" xml:space="preserve">
+    <value>Last Days</value>
+  </data>
+  <data name="Range" xml:space="preserve">
+    <value>Range</value>
   </data>
   <data name="ToDate" xml:space="preserve">
     <value>To date:</value>
